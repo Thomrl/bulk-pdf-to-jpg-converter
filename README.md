@@ -1,4 +1,4 @@
-# bulk-pdf-to-jpg-conveter
+# bulk-pdf-to-jpg-converter
 Convert a folder of pdf files to jpg image files
 
 <h3>Install</h3>
