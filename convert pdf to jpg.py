@@ -1,35 +1,29 @@
 import pdf2image, os, shutil
 from pdf2image import convert_from_path
 
-os.chdir(r"C:\Users\thomas\Documents\test")
-cwd = os.getcwd()
-
-def work(fileType, location):
+def convert(fileType):
     for file in os.listdir():                       
-        if file.endswith(fileType):                 
-            if not os.path.exists(location):       
-                os.mkdir(location)
-
+        if file.endswith(fileType):  
             images = convert_from_path(file)
-            print(images)
             for i in range(len(images)):
-                temp = file.split(fileType)
+                temp = file.split(fileType) #Delete .pdf from the filename
                 newFileName = temp[0]
                 images[i].save(newFileName+ str(i+1) +'.jpg', 'JPEG')
-            print(file + " --->> \""+location+"\"")  
+            print(file + " has been converted to .jpg file(s)")  
 
-
-def sortByFile(fileType, location):
+def moveTo(fileType, location):                
+    if not os.path.exists(location):       
+        os.mkdir(location)
     for file in os.listdir():                        
         if file.endswith(fileType):                  
-            if not os.path.exists(location):         
-                os.mkdir(location)                   
-            print(file + " --->> \""+location+"\"")  
+            print(file + " moved to  \""+location+"\"")  
             shutil.move(file, location)              
 
 
-pdfFiles = (".pdf")
-imgFiles = (".jpg", ".JPG", ".jpeg", ".png", ".gif")
+imageFiles = (".jpg", ".JPG", ".jpeg")
 
-work(pdfFiles, "converted")
-sortByFile(imgFiles, "converted")
+convert(".pdf")
+moveTo(imageFiles, "converted")
+
+print("All done!")
+input("Press Enter to close this window")
