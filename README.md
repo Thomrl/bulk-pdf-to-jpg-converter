@@ -9,7 +9,7 @@ The script will start converting all the pdf files in the folder it's placed in.
 
 - Python (I used version 3.9),
 - pd2image (python library)
-- Poppler (<a target="_About:blank" href="https://poppler.freedesktop.org/" >What is Poppler?</a>)
+- Poppler (<a target="_blank" href="https://poppler.freedesktop.org/" >What is Poppler?</a>)
 
 <h3>How to install what's needed</h3>
 <h4>pdf2image</h4>Install this with the command below in the CMD (Windows)
@@ -17,5 +17,5 @@ The script will start converting all the pdf files in the folder it's placed in.
 ```pip install pdf2image```
 <br>
 <h4>Poppler</h4>
-Download a built version of poppler here https://github.com/oschwartz10612/poppler-windows/releases/tag/v21.03.0 download the Release zip archieve, unpack, and place the unpacked folder somewhere convenient (consider it an installed software).<br>
+Download a built version of poppler here <a target="_blank" href="https://github.com/oschwartz10612/poppler-windows/releases/tag/v21.03.0" >https://github.com/oschwartz10612/poppler-windows/releases/tag/v21.03.0</a> download the Release zip archieve, unpack, and place the unpacked folder somewhere convenient (consider it an installed software).<br>
 Setup PATH to poppler's bin folder.
