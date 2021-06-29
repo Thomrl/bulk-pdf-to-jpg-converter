@@ -8,7 +8,7 @@ The script will start converting all the pdf files in the folder it's placed in.
 <h3>Needed for this to work</h3>
 
 - Python (I used version 3.9),
-- pd2image (python library)
+- pdf2image (python library)
 - Poppler (<a target="_blank" href="https://poppler.freedesktop.org/" >What is Poppler?</a>)
 
 <h3>How to install what's needed</h3>
