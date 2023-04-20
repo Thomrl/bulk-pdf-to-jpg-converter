@@ -8,7 +8,7 @@ Simply run the script in the folder containing the pdf files.<br>
 
 <h3>Setup (Easy way)</h3>
 
-- If you don't have python you can use `winget install 9NRWMJP3717K` to install python 3.11
+- If you don't have python you can use `winget install 9NRWMJP3717K` in CMD or powershell to install python 3.11
 - Launch the setup.bat file to install the needed modules for this to work (<a target="_blank" href="https://scoop.sh/" >Scoop</a> is needed for poppler).
 
 <sub>That's how I set it up for myself</sub>
