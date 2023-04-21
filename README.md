@@ -11,7 +11,7 @@ Simply run the script in the folder containing the pdf files.<br>
 - If you don't have python you can use `winget install Python.Python.3.11` in CMD or powershell to install python 3.11
 - Launch the setup.bat file to install the needed modules for this to work (<a target="_blank" href="https://scoop.sh/" >Scoop</a> is needed for poppler).
 
-<sub>That's how I set it up for myself</sub>
+<sub>If you do not have scoop installed <a href="https://thomrl.github.io/thomrl/">here's how to install it</a>.</sub>
 
 <h3>Needed for this to work</h3>
 
